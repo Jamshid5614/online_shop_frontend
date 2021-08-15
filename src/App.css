@@ -69,3 +69,36 @@
 }
 
 
+a{
+  text-decoration: none;
+}
+
+
+button{
+  cursor: pointer;
+}
+
+.stars-block img{
+  max-width: 20px;
+  max-height: 20px;
+}
+.stars-block {
+  margin-bottom: 10px;
+}
+
+
+
+.ant-pagination-item-active a {
+  background-color: #00AC4E !important;
+  color: #fff !important;
+  border: none;
+}
+
+.my-button {
+  background-color: #00AC4E;
+  color: #fff;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 4px;
+}
+

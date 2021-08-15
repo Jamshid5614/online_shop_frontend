@@ -4,11 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import {Provider} from 'react-redux';
+import store, {persistor} from './store';
+import {PersistGate} from 'redux-persist/integration/react';
+import {useSelector} from 'react-redux';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <PersistGate persistor={persistor} >
+      <App />
+    </PersistGate>
+  </Provider>,
   document.getElementById('root')
 );
 

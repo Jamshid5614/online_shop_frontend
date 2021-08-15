@@ -19,9 +19,21 @@ box-shadow: 0px 0px 15px 0px #0000001F;
             justify-content: space-between;
             color: #333333;
             font-weight: 600;
+            text-decoration: none;
+            position: relative;
             svg {
                 fill: #00AC4E;
                 font-size: 18px;
+            }
+            span{
+                background-color: #EB5757;
+                padding: 1px 6px;
+                border-radius: 50%;
+                font-size: 9px;
+                color: #fff;
+                position: absolute;
+                right: -50%;
+                top: -20%;
             }
         }
     }
@@ -46,8 +58,13 @@ box-shadow: 0px 0px 15px 0px #0000001F;
     transition: 0.5s;
 }
 &.mobile {
+    li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
     .header {
-        padding: 15px 20px;
+        padding: 15px 10px;
         margin: 0;
     }
 }
